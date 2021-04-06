@@ -21,7 +21,7 @@ The framework and packages used are listed below:
 - [express](https://www.express.com/)
 - [mongoose](https://mongoosejs.com)
 - [cors](https://www.npmjs.com/package/bcrypt)
-- [sequelize] (https://sequelize.org/)
+- [sequelize](https://sequelize.org/)
 
 ## Documentation
 
