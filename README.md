@@ -3,6 +3,16 @@
 Simple restaurant App is a web-service that provides simple CRUD functionalities, which will allow us to handle our Menu & Submenu data.
 It consists of Menu API and SubMenu API. This project is used REST API.
 
+## Database Scheme & The Tables
+
+This project uses SQL database, MySql, and you can see the database scheme in folder database-mysql-screenshot (there are 3 images in this folder, includes databse scheme, menu table, and submenu table)
+
+To open the folder:
+
+```
+$ cd database-mysql-screenshot
+```
+
 ## How it works
 
 Here is the full guide and response of the API on what feature we can apply.
