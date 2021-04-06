@@ -15,6 +15,7 @@ To install:
 
 ```
 $ git clone https://github.com/Bonjour-amanda/simple-restaurant.git
+$ cd simple-restaurant
 $ npm install
 $ npm test 
 ```
