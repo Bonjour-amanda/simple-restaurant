@@ -1,7 +1,7 @@
 {
-  "name": "menu-api",
+  "name": "simple-resturant-app",
   "version": "1.0.0",
-  "description": "hangry test - menu & submenu api",
+  "description": "menu & submenu api",
   "main": "index.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
