@@ -17,9 +17,14 @@
     "passport-local": "^1.0.0",
     "sequelize": "^6.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2"
+  },
   "scripts": {
-    "test": "nodemon ./index.js"
+    "test": "mocha --t 0 ./test/testing.js --exit",
+    "dev": "nodemon ./index.js"
   },
   "author": "amanda",
   "license": "ISC"
