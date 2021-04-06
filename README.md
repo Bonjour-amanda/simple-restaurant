@@ -30,6 +30,14 @@ The framework and packages used are listed below:
 - [sequelize](https://sequelize.org/)
 - [mysql2](https://www.npmjs.com/package/mysql2)
 
+## Unit Testing Dependencies
+
+This project is provided by Unit Testing, and the dependencies are:
+
+- [chai](https://www.chaijs.com/)
+- [chai-http](https://www.chaijs.com/plugins/chai-http/)
+- [mocha](https://mochajs.org/)
+
 ## Documentation
 
 The documentation for this project can be found here and if you use [Postman](https://www.getpostman.com/) you can directly run all of the API within the environment
