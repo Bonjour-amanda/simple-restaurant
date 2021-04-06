@@ -17,7 +17,7 @@ To install:
 $ git clone https://github.com/Bonjour-amanda/simple-restaurant.git
 $ cd simple-restaurant-main
 $ npm install
-$ npm run dev 
+$ npm test
 ```
 
 ## Backend Dependencies
