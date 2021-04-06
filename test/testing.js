@@ -103,88 +103,92 @@ describe('Menu API', () => {
 })
 
 // UNIT TESTING FOR SUBMENU API
-describe('/GET All Submenu', () => {
-    it('it should GET All Submenu', (done) => {
-        chai.request(server)
-            .get('/submenu/allSubmenu')
-            .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.an('object');
-                done();
-            });
-    });
-})
+describe('SubMenu API', () => {
 
-describe('/GET Single Submenu by id', () => {
-    it('it should GET One Submenu by id', (done) => {
-        chai.request(server)
-            .get('/submenu/oneSubmenu/2')
-            .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.an('object');
-                done();
-            });
-    });
-})
 
-describe('/GET Single Submenu by Label', () => {
-    it('it should GET One Submenu by Label', (done) => {
-        chai.request(server)
-            .get('/submenu/oneSubLabel/C1')
-            .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.an('object');
-                done();
-            });
-    });
-})
-
-describe('/POST Add New Submenu', () => {
-    it('It should Create New Submenu', (done) => {
-        chai.request(server)
-            .post('/submenu/newSubmenu')
-            .send({
-                menuId : 3,
-                label: "C2",
-                price: 3500,
-            })
-            .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.an("object");
-                res.body.should.have.property("message").eql("new submenu has been suceessfully added")
-                done()
-            })
+    describe('/GET All Submenu', () => {
+        it('it should GET All Submenu', (done) => {
+            chai.request(server)
+                .get('/submenu/allSubmenu')
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.should.be.an('object');
+                    done();
+                });
+        });
     })
-})
 
-describe('/PUT Update Submenu by id', () => {
-    it('it should Update a Submenu given the id', (done) => {
-        chai.request(server)
-            .put('/submenu/updateSubmenu/5')
-            .send({
-                menuId : 2,
-                label: "B2",
-                price: 1500,
-            })
-            .end((err, res) => {
-                res.should.have.status(200);
-                res.body.should.be.a('object');
-                res.body.should.have.property('message').eql('submenu has been sucessfully updated');
-                res.body.should.have.property('data')
-                done();
-            });
+    describe('/GET Single Submenu by id', () => {
+        it('it should GET One Submenu by id', (done) => {
+            chai.request(server)
+                .get('/submenu/oneSubmenu/2')
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.should.be.an('object');
+                    done();
+                });
+        });
+    })
+
+    describe('/GET Single Submenu by Label', () => {
+        it('it should GET One Submenu by Label', (done) => {
+            chai.request(server)
+                .get('/submenu/oneSubLabel/C1')
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.should.be.an('object');
+                    done();
+                });
+        });
+    })
+
+    describe('/POST Add New Submenu', () => {
+        it('It should Create New Submenu', (done) => {
+            chai.request(server)
+                .post('/submenu/newSubmenu')
+                .send({
+                    menuId: 3,
+                    label: "C2",
+                    price: 3500,
+                })
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.should.be.an("object");
+                    res.body.should.have.property("message").eql("new submenu has been suceessfully added")
+                    done()
+                })
+        })
+    })
+
+    describe('/PUT Update Submenu by id', () => {
+        it('it should Update a Submenu given the id', (done) => {
+            chai.request(server)
+                .put('/submenu/updateSubmenu/5')
+                .send({
+                    menuId: 2,
+                    label: "B2",
+                    price: 1500,
+                })
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.should.be.a('object');
+                    res.body.should.have.property('message').eql('submenu has been sucessfully updated');
+                    res.body.should.have.property('data')
+                    done();
+                });
+        });
     });
-});
 
-describe('/DELETE Submenu', () => {
-    it('It should Delete a Submenu', (done) => {
-        chai.request(server)
-            .delete('/submenu/delete/9')
-            .end((err, res) => {
-                res.should.have.status(200)
-                res.body.should.be.an('object')
-                res.body.should.have.property('message').eql('submenu has been deleted')
-                done()
-            })
+    describe('/DELETE Submenu', () => {
+        it('It should Delete a Submenu', (done) => {
+            chai.request(server)
+                .delete('/submenu/delete/9')
+                .end((err, res) => {
+                    res.should.have.status(200)
+                    res.body.should.be.an('object')
+                    res.body.should.have.property('message').eql('submenu has been deleted')
+                    done()
+                })
+        })
     })
 })
