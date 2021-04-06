@@ -1,7 +1,7 @@
 let Sequelize = require('sequelize')
 const {
-    Menu,
-    Submenu
+    menu,
+    submenu
 } = require("../models")
 
 let fs = require('fs')
@@ -105,7 +105,6 @@ describe('Menu API', () => {
 // UNIT TESTING FOR SUBMENU API
 describe('SubMenu API', () => {
 
-
     describe('/GET All Submenu', () => {
         it('it should GET All Submenu', (done) => {
             chai.request(server)
@@ -117,7 +116,7 @@ describe('SubMenu API', () => {
                 });
         });
     })
-
+    
     describe('/GET Single Submenu by id', () => {
         it('it should GET One Submenu by id', (done) => {
             chai.request(server)
@@ -129,7 +128,7 @@ describe('SubMenu API', () => {
                 });
         });
     })
-
+    
     describe('/GET Single Submenu by Label', () => {
         it('it should GET One Submenu by Label', (done) => {
             chai.request(server)
@@ -141,13 +140,13 @@ describe('SubMenu API', () => {
                 });
         });
     })
-
+    
     describe('/POST Add New Submenu', () => {
         it('It should Create New Submenu', (done) => {
             chai.request(server)
                 .post('/submenu/newSubmenu')
                 .send({
-                    menuId: 3,
+                    menuId : 3,
                     label: "C2",
                     price: 3500,
                 })
@@ -159,13 +158,13 @@ describe('SubMenu API', () => {
                 })
         })
     })
-
+    
     describe('/PUT Update Submenu by id', () => {
         it('it should Update a Submenu given the id', (done) => {
             chai.request(server)
                 .put('/submenu/updateSubmenu/5')
                 .send({
-                    menuId: 2,
+                    menuId : 2,
                     label: "B2",
                     price: 1500,
                 })
@@ -178,7 +177,7 @@ describe('SubMenu API', () => {
                 });
         });
     });
-
+    
     describe('/DELETE Submenu', () => {
         it('It should Delete a Submenu', (done) => {
             chai.request(server)
