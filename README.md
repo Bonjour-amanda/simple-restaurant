@@ -48,6 +48,14 @@ This project is provided by Unit Testing, and the dependencies are:
 - [chai-http](https://www.chaijs.com/plugins/chai-http/)
 - [mocha](https://mochajs.org/)
 
+You can see the unit testing in folder unit-testing-screenshot.
+
+To open the folder:
+
+```
+$ cd unit-testing-screenshot
+```
+
 ## Documentation
 
 The documentation for this project can be found here and if you use [Postman](https://www.getpostman.com/) you can directly run all of the API within the environment
