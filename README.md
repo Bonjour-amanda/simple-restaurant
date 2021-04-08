@@ -22,7 +22,7 @@ $ npm run dev
 
 ## Database Scheme & The Tables
 
-This project uses SQL database, MySql, and you can see the database scheme in folder database-mysql-screenshot (there are 3 images in this folder, includes databse scheme, menu table, and submenu table)
+This project uses SQL database, MySql, Sequelize and you can see the database scheme in folder database-mysql-screenshot (there are 3 images in this folder, includes databse scheme, menu table, and submenu table)
 
 To open the folder:
 
